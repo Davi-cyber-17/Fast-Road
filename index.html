@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#05071a">
+<title>Fast Road</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud" class="hide">
+  <div id="score">Pontuação: 0</div>
+  <div id="coins"><i></i><b id="cn">0</b></div>
+  <div id="tbar"><div id="tfill"></div><span>TEMPO</span></div>
+</div>
+
+<div id="touch" class="hide">
+  <button id="bB">◀</button>
+  <button id="bG">▶</button>
+</div>
+
+<div id="menu" class="screen">
+  <div class="panel">
+    <h1>FAST ROAD</h1>
+    <p class="sub">Colinas, moedas e muita velocidade!</p>
+    <div class="chip"><i></i><span id="best">Recorde: 0</span></div>
+    <button class="btn" id="bPlay">Jogar</button>
+    <div class="how">
+      <div class="row"><kbd class="k1">◀</kbd><span>Frear / inclinar p/ trás <em>← ou A</em></span></div>
+      <div class="row"><kbd class="k2">▶</kbd><span>Inclinar p/ frente <em>→ ou D</em></span></div>
+      <small>O carro acelera sozinho e flutua quando sobe muito. Não capote!</small>
+    </div>
+  </div>
+</div>
+
+<div id="end" class="screen hide">
+  <h2 id="et">Tempo esgotado!</h2>
+  <p id="fs" class="big"></p>
+  <p id="fc"></p>
+  <p id="fb" class="rec"></p>
+  <button class="btn" id="bAgain">Jogar de novo</button>
+  <button class="btn sec" id="bMenu">Menu</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
